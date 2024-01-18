@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&display=swap');
+      </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>
+        Simulador de Cálculo de Depreciação
+    </title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="titulo">Calculadora de Depreciação</h1>
+        <input type="text" id="equipmentValue" placeholder="Valor do Equipamento" required />
+        <input type="text" id="scrapValue" placeholder="Valor da Sucata" required />
+        <input type="number" id="usefulLife" placeholder="Vida Útil (Anos)" required />
+        <input type="number" id="timeOfUse" placeholder="Tempo de Uso (Meses)" required />
+        <button onclick="calculateDepreciation()">Calcular</button>
+        <p id="result"></p>
+        <p id="result-mensal"></p>
+        <p id="result-contabil"></p>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
